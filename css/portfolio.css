@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #000241;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* .portfolio-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+} */
+
+/* .JERSEY {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.FILARTISTS {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.LYRICODESIGNS {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+} */
+
+.JERSEY, .FILARTISTS, .LYRICODESIGNS, .LYRICODESIGNS-V2, .SPOTIFYV2, .UNGART, .MYSELF, .CRG {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.portfolio-item, .portfolio-item-one, .portfolio-item-two, .portfolio-item-three, .portfolio-item-four, .portfolio-item-five, .portfolio-item-six, .portfolio-item-seven {
+    position: relative; /* Required for positioning the hover effect */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover, .portfolio-item-one:hover, .portfolio-item-two:hover, .portfolio-item-three:hover, .portfolio-item-four:hover, .portfolio-item-five:hover, .portfolio-item-six:hover, .portfolio-item-seven:hover {
+    transform: scale(1.05); /* Scale up the whole item on hover */
+}
+
+.portfolio-item img, .portfolio-item-one img, .portfolio-item-two img, .portfolio-item-three img, .portfolio-item-four img, .portfolio-item-five img, .portfolio-item-six img, .portfolio-item-seven img {
+    width: 100%; /* Make images responsive */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* .portfolio-item:hover img, .portfolio-item-one:hover img, .portfolio-item-two:hover img {
+    transform: scale(1.1); /* Scale up on hover
+} */
+
+a {
+    font-size: 30px;
+    color: rgb(168, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}

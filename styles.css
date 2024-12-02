@@ -1,0 +1,37 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-grid video {
+    width: 100%;
+    height: auto;
+}
+
+#control-one, #control-two, #control-three {
+    position: relative; /* Required for positioning the hover effect */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s ease;
+}
+
+#control-one #source-one,  #control-one #source-two, #control-three #source-three {
+    width: 100%; /* Make images responsive */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+#control-one:hover, #control-two:hover, #control-three:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
